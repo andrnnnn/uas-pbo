@@ -7,7 +7,10 @@ class FormMain(QMainWindow):
   
   def __init__(self):
     super().__init__()
-    loadUi('form_main.ui', self)
+    loadUi('form/form_main.ui', self)
+    
+    self.setWindowTitle('Aplikasi Perpustakaan Kelompok 12')
+    self.setWindowIcon(QIcon('ICON/library_logo.png'))
     
     # membuat Mdi
     self.mdi = QMdiArea()
@@ -50,6 +53,7 @@ class FormMain(QMainWindow):
     msgbox.setWindowTitle('Aplikasi Perpustakaan')
     msgbox.setIconPixmap(QIcon('ICON/question.png').pixmap(40, 40))
     # msgbox.setIcon(QMessageBox.Question)
+    msgbox.setWindowIcon(QIcon('ICON/library_logo.png'))
     msgbox.setText(pesan)
     msgbox.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
     

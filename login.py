@@ -7,7 +7,7 @@ import mysql.connector as mc
 class Login(QMainWindow):
   def __init__(self):
     super().__init__()
-    loadUi('form_login.ui', self)
+    loadUi('form/form_login.ui', self)
     
     self.setWindowTitle('Aplikasi Perpustakaan Kelompok 12')
     self.setWindowIcon(QIcon('ICON/library_logo.png'))
