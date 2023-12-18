@@ -121,7 +121,10 @@ class User(QMainWindow):
         port='8111')
         
         # menyimpan data tabel form ke data tbl_user
-        query = 'INSERT INTO tbl_user(id_user, nama_depan, nama_tengah, nama_belakang, tipe_user, username, password) VALUES(%s, %s, %s, %s, %s, %s, md5(%s))'
+        query = '''
+                  INSERT INTO tbl_user(id_user, nama_depan, nama_tengah, nama_belakang, tipe_user, username, password) 
+                  VALUES(%s, %s, %s, %s, %s, %s, md5(%s))
+                '''
         value = (idUser, nDepan, nTengah, nBelakang, tipeUser, username, password)
         cursor = con.cursor()
         cursor.execute(query, value)
@@ -193,7 +196,18 @@ class User(QMainWindow):
           port='8111')
         
         # query edit data
-        query = 'UPDATE tbl_user SET nama_depan=%s, nama_tengah=%s, nama_belakang=%s, tipe_user=%s, username=%s WHERE id_user=%s'
+        query = '''
+                  UPDATE 
+                    tbl_user 
+                  SET 
+                    nama_depan=%s, 
+                    nama_tengah=%s, 
+                    nama_belakang=%s, 
+                    tipe_user=%s, 
+                    username=%s 
+                  WHERE 
+                    id_user=%s
+                '''
         value = (nDepan, nTengah, nBelakang, tipeUser, username, idUser)
         cursor = con.cursor()
         cursor.execute(query, value)
@@ -272,7 +286,15 @@ class User(QMainWindow):
             port='8111')
         
         # mengubah pass pada tbl_user di database
-        query = 'UPDATE tbl_user SET password = md5(%s) WHERE id_user = %s'
+        query = '''
+                  UPDATE 
+                    tbl_user 
+                  SET 
+                    password = md5(%s) 
+                  WHERE 
+                    id_user = %s
+                '''
+                
         value = (passBaru, idUser)
         cursor = con.cursor()
         cursor.execute(query, value)

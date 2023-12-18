@@ -2,10 +2,14 @@ import sys
 from PyQt5.QtWidgets import QMainWindow, QApplication, QMdiArea, QMenuBar, QAction, QMdiSubWindow, QMessageBox
 from PyQt5.QtGui import QIcon
 from PyQt5.uic import loadUi
+from user import *
+from member import *
+from book import *
+from transaction import *
 
 class FormMain(QMainWindow):
   
-  def __init__(self):
+  def __init__(self, tipeUser):
     super().__init__()
     loadUi('form/form_main.ui', self)
     
@@ -33,7 +37,7 @@ class FormMain(QMainWindow):
     data.addAction(dataMember)
     data.addAction(dataBook)
     
-    dataLoan = QAction(QIcon('ICON/loan_transaction.png'), 'Transaksi Peminjaman', self)
+    dataLoan = QAction(QIcon('ICON/loan_transaction.png'), 'Transaksi Peminjaman Pengembalian', self)
     transaksi.addAction(dataLoan)
     
     logout = QAction(QIcon('ICON/logout.png'),'Logout', self)
@@ -44,8 +48,18 @@ class FormMain(QMainWindow):
     self.setMenuBar(self.menu_bar)
     
     # trigger
+    dataUser.triggered.connect(self.tampilFormUser)
+    dataMember.triggered.connect(self.tampilFormMember)
+    dataBook.triggered.connect(self.tampilFormBuku)
+    dataLoan.triggered.connect(self.tampilFormTransaksi)
     logout.triggered.connect(self.logoutUser)
     exitApp.triggered.connect(self.keluar)
+    
+    # pengecekan tipe user
+    if tipeUser == 'User':
+      dataUser.setEnabled(False)
+      dataBook.setEnabled(False)
+      dataMember.setEnabled(False)
     
   # fungsi tampilan dialog konfirmasi
   def jendelaACC(self, pesan):
@@ -59,20 +73,57 @@ class FormMain(QMainWindow):
     
     return msgbox.exec()
   
+  # fungsi untuk menampilkan form data user
+  def tampilFormUser(self):
+    form = User()  
+    sub_form = QMdiSubWindow()
+    sub_form.setWidget(form)
+    sub_form.setFixedSize(1080, 500)
+    self.mdi.addSubWindow(sub_form)
+    sub_form.show() 
+    
+  # fungsi menampilkan form data anggota  
+  def tampilFormMember(self):
+    form = Anggota()
+    sub_form = QMdiSubWindow()
+    sub_form.setWidget(form)
+    sub_form.setFixedSize(1290, 550)
+    self.mdi.addSubWindow(sub_form)
+    sub_form.show() 
+  
+  # fungsi menampilkan form data buku
+  def tampilFormBuku(self):
+    form = Buku()
+    sub_form = QMdiSubWindow()
+    sub_form.setWidget(form)
+    sub_form.setFixedSize(1140, 570)
+    self.mdi.addSubWindow(sub_form)
+    sub_form.show()
+    
+  def tampilFormTransaksi(self):
+    form = Transaksi()
+    sub_form = QMdiSubWindow()
+    sub_form.setWidget(form)
+    sub_form.setFixedSize(990, 600)
+    self.mdi.addSubWindow(sub_form)
+    sub_form.show()
+    
   # fungsi untuk logout
   def logoutUser(self):
-    dialog_acc = self.jendelaACC('Apakah anda yakin untuk logout ?')
-    if dialog_acc == QMessageBox.Ok:
-      pass
+    msgbx = self.jendelaACC('Apakah anda yakin untuk logout ?')
+    if msgbx == QMessageBox.Ok:
+      widget = self.parentWidget()
+      widget.setCurrentIndex(widget.currentIndex() - 1)
+      widget.showNormal()
     
   # fungsi keluar dari aplikasi
   def keluar(self):
-    dialog_acc = self.jendelaACC('Apakah anda yakin untuk keluar dari aplikasi ?')
-    if dialog_acc == QMessageBox.Ok:
-      pass
+    msgbx = self.jendelaACC('Apakah anda yakin untuk keluar dari aplikasi ?')
+    if msgbx == QMessageBox.Ok:
+      self.parentWidget().close()
     
 if __name__ == '__main__':
   app = QApplication(sys.argv)
-  window = FormMain()
+  window = FormMain('Administrator')
   window.show()
   sys.exit(app.exec_())

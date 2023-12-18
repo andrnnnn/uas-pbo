@@ -11,11 +11,10 @@ CREATE TABLE tbl_user(
   password VARCHAR(32)
 );
 
+-- username password admin
 INSERT INTO tbl_user 
 VALUE
-  ('USER001', 'Andrian', '', 'Maulana', 'Administrator', 'andrian', MD5('12345'));
-
-SELECT * FROM tbl_user;
+  ('ADM001', 'Andrian', '', 'Maulana', 'Administrator', 'andrian', MD5('12345'));
 
 CREATE TABLE tbl_anggota(
   id_anggota VARCHAR(25) PRIMARY KEY NOT NULL,
@@ -68,3 +67,38 @@ SHOW VARIABLES LIKE 'hostname';
 SELECT USER();
 
 SELECT @IDENTIFIED_BY_PASSWORD;
+
+SELECT * FROM tbl_user;
+SELECT * FROM tbl_peminjaman;
+SELECT * FROM tbl_anggota;
+SELECT * FROM tbl_genre;
+SELECT * FROM tbl_penulis;
+SELECT * FROM tbl_buku;
+
+SELECT 
+  tbl_peminjaman.id_peminjaman,
+  tbl_buku.isbn, tbl_buku.judul, 
+  tbl_anggota.nama_depan, 
+  tbl_anggota.nama_tengah, 
+  tbl_anggota.nama_belakang, 
+  tbl_peminjaman.tanggal_pinjam, 
+  tbl_peminjaman.tanggal_tempo, 
+  tbl_peminjaman.tanggal_kembali,
+  CONCAT('Rp ',
+    FORMAT(
+      CASE
+        WHEN tbl_peminjaman.tanggal_kembali IS NOT NULL AND tbl_peminjaman.tanggal_kembali > tbl_peminjaman.tanggal_tempo THEN
+          DATEDIFF(tbl_peminjaman.tanggal_kembali, tbl_peminjaman.tanggal_tempo) * 2000
+        ELSE
+          0
+      END, 
+    0)
+  ) AS denda
+FROM 
+  ((tbl_peminjaman 
+    INNER JOIN tbl_buku ON tbl_peminjaman.isbn=tbl_buku.isbn) 
+    INNER JOIN tbl_anggota ON tbl_peminjaman.id_anggota=tbl_anggota.id_anggota)
+WHERE 
+  tbl_peminjaman.tanggal_kembali IS NOT NULL
+ORDER BY
+  tbl_peminjaman.tanggal_kembali;

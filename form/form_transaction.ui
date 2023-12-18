@@ -6,14 +6,9 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1070</width>
-    <height>459</height>
+    <width>971</width>
+    <height>570</height>
    </rect>
-  </property>
-  <property name="font">
-   <font>
-    <pointsize>12</pointsize>
-   </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -27,7 +22,7 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>1051</width>
+      <width>951</width>
       <height>51</height>
      </rect>
     </property>
@@ -40,10 +35,10 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
-     <string>REGISTRASI PENGGUNA</string>
+     <string>DATA PEMINJAMAN &amp; PENGEMBALIAN BUKU</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -53,9 +48,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>70</y>
-      <width>411</width>
-      <height>361</height>
+      <y>90</y>
+      <width>381</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -69,152 +64,19 @@
 border-radius: 5px;</string>
     </property>
     <property name="title">
-     <string>Data Pengguna</string>
+     <string>Data Anggota</string>
     </property>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>30</y>
-       <width>81</width>
+       <y>20</y>
+       <width>91</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border: none</string>
-     </property>
-     <property name="text">
-      <string>ID User</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border: none</string>
-     </property>
-     <property name="text">
-      <string>Nama Depan</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>110</y>
-       <width>111</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border: none</string>
-     </property>
-     <property name="text">
-      <string>Nama Tengah</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_5">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>150</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border: none</string>
-     </property>
-     <property name="text">
-      <string>Nama Belakang</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>190</y>
-       <width>101</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border: none</string>
-     </property>
-     <property name="text">
-      <string>Tipe User</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_7">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>230</y>
-       <width>81</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border: none</string>
-     </property>
-     <property name="text">
-      <string>Username</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_8">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>270</y>
-       <width>81</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
        <pointsize>10</pointsize>
       </font>
      </property>
@@ -222,302 +84,83 @@ border-radius: 5px;</string>
       <string notr="true">border: none;</string>
      </property>
      <property name="text">
-      <string>Password</string>
+      <string>ID Anggota</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="editID">
+    <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>30</y>
-       <width>261</width>
+       <x>10</x>
+       <y>60</y>
+       <width>91</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>Century Gothic</family>
        <pointsize>10</pointsize>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="editNamaDepan">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>70</y>
-       <width>261</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="editNamaTengah">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>110</y>
-       <width>261</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="editNamaBelakang">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>150</y>
-       <width>261</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="editUsername">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>230</y>
-       <width>261</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="editPassword">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>270</y>
-       <width>261</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-     </property>
-     <property name="echoMode">
-      <enum>QLineEdit::Password</enum>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="cmbTipeUser">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>190</y>
-       <width>261</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);</string>
-     </property>
-     <item>
-      <property name="text">
-       <string/>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Administrator</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>User</string>
-      </property>
-     </item>
-    </widget>
-    <widget class="QPushButton" name="btnSimpan">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>320</y>
-       <width>81</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Century Gothic</family>
-       <weight>50</weight>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-border: 1px solid black;
-border-radius: 10px;
-background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);
-}
-
-QPushButton:hover{
-background-color: rgb(205, 205, 205);
-}
-
-QPushButton:pressed{
-padding-left: 5px;
-padding-top: 5px;
-}</string>
+      <string notr="true">border: none;</string>
      </property>
      <property name="text">
-      <string>Simpan</string>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../ICON/add_user.png</normaloff>../ICON/add_user.png</iconset>
+      <string>Nama Anggota</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="btnEdit">
+    <widget class="QLineEdit" name="editIDAnggota">
      <property name="geometry">
       <rect>
-       <x>220</x>
-       <y>320</y>
-       <width>81</width>
+       <x>120</x>
+       <y>20</y>
+       <width>201</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>Century Gothic</family>
-       <weight>50</weight>
-       <bold>false</bold>
+       <pointsize>10</pointsize>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">QPushButton{
-border: 1px solid black;
-border-radius: 10px;
-background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);
-}
-
-QPushButton:hover{
-background-color: rgb(205, 205, 205);
-}
-
-QPushButton:pressed{
-padding-left: 5px;
-padding-top: 5px;
-}</string>
-     </property>
-     <property name="text">
-      <string>Edit</string>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../ICON/edit_user.png</normaloff>../ICON/edit_user.png</iconset>
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="btnHapus">
+    <widget class="QLineEdit" name="editNamaAnggota">
      <property name="geometry">
       <rect>
-       <x>310</x>
-       <y>320</y>
-       <width>81</width>
+       <x>120</x>
+       <y>60</y>
+       <width>241</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>Century Gothic</family>
-       <weight>50</weight>
-       <bold>false</bold>
+       <pointsize>10</pointsize>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">QPushButton{
-border: 1px solid black;
-border-radius: 10px;
-background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);
-}
-
-QPushButton:hover{
-background-color: rgb(205, 205, 205);
-}
-
-QPushButton:pressed{
-padding-left: 5px;
-padding-top: 5px;
-}</string>
-     </property>
-     <property name="text">
-      <string>Hapus</string>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../ICON/delete_user.png</normaloff>../ICON/delete_user.png</iconset>
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="btnToggle">
+    <widget class="QPushButton" name="btnSearchMember">
      <property name="geometry">
       <rect>
-       <x>360</x>
-       <y>270</y>
+       <x>330</x>
+       <y>20</y>
        <width>31</width>
        <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
+border: 1px solid black;
+border-radius: 10px;
 background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
 }
 
 QPushButton:hover{
@@ -534,23 +177,17 @@ padding-top: 5px;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../ICON/show.png</normaloff>../ICON/show.png</iconset>
-     </property>
-     <property name="checkable">
-      <bool>false</bool>
-     </property>
-     <property name="checked">
-      <bool>false</bool>
+       <normaloff>../ICON/search_member.png</normaloff>../ICON/search_member.png</iconset>
      </property>
     </widget>
    </widget>
-   <widget class="QTableWidget" name="tblUser">
+   <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>445</x>
-      <y>70</y>
-      <width>611</width>
-      <height>361</height>
+      <x>10</x>
+      <y>210</y>
+      <width>381</width>
+      <height>331</height>
      </rect>
     </property>
     <property name="font">
@@ -560,7 +197,396 @@ padding-top: 5px;
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">border: 1px solid black;
+border-radius: 5px;</string>
+    </property>
+    <property name="title">
+     <string>Data Buku</string>
+    </property>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>ISBN</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="editISBN">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>30</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSearchBook">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>30</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border: 1px solid black;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+}
+
+QPushButton:hover{
+background-color: rgb(205, 205, 205);
+}
+
+QPushButton:pressed{
+padding-left: 5px;
+padding-top: 5px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../ICON/search_book.png</normaloff>../ICON/search_book.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>Judul Buku</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>149</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>Tgl Peminjaman</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="datePinjam">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>150</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateTempo">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>190</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>Tgl Pengembalian</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateKembali">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>231</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string>Tgl Dikembalikan</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnBorrow">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>290</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border: 1px solid black;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+}
+
+QPushButton:hover{
+background-color: rgb(205, 205, 205);
+}
+
+QPushButton:pressed{
+padding-left: 5px;
+padding-top: 5px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Pinjam</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../ICON/borrowed_book.png</normaloff>../ICON/borrowed_book.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnReturn">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>290</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border: 1px solid black;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+}
+
+QPushButton:hover{
+background-color: rgb(205, 205, 205);
+}
+
+QPushButton:pressed{
+padding-left: 5px;
+padding-top: 5px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Kembali</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../ICON/returned_book.png</normaloff>../ICON/returned_book.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCancel">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>290</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border: 1px solid black;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+}
+
+QPushButton:hover{
+background-color: rgb(205, 205, 205);
+}
+
+QPushButton:pressed{
+padding-left: 5px;
+padding-top: 5px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Batal</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../ICON/cancel.png</normaloff>../ICON/cancel.png</iconset>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="editJudul">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>70</y>
+       <width>241</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="tblPeminjaman">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>140</y>
+      <width>541</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="editTriggers">
      <set>QAbstractItemView::NoEditTriggers</set>
@@ -573,34 +599,135 @@ padding-top: 5px;
     </property>
     <column>
      <property name="text">
-      <string>ID User</string>
+      <string>ID Peminjaman</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Nama Depan</string>
+      <string>ISBN</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Nama Tengah</string>
+      <string>Judul Buku</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Nama Belakang</string>
+      <string>Tgl Peminjaman</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Tipe User</string>
+      <string>Tgl Pengembalian</string>
      </property>
     </column>
-    <column>
-     <property name="text">
-      <string>Username</string>
-     </property>
-    </column>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>100</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Buku Belum Kembali</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnNotBackYet">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>100</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 1px solid black;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+}
+
+QPushButton:hover{
+background-color: rgb(205, 205, 205);
+}
+
+QPushButton:pressed{
+padding-left: 5px;
+padding-top: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../ICON/notBackYet.png</normaloff>../ICON/notBackYet.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnHistory">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>100</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border: 1px solid black;
+border-radius: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+}
+
+QPushButton:hover{
+background-color: rgb(205, 205, 205);
+}
+
+QPushButton:pressed{
+padding-left: 5px;
+padding-top: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../ICON/history.png</normaloff>../ICON/history.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>100</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Riwayat Peminjaman dan Denda</string>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
